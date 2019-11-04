@@ -10,17 +10,21 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('{provider}/auth', [
+// Route::get('{provider}/auth', [
 
-    'uses' => 'MediaPlatformController@auth',
+//     'uses' => 'MediaPlatformController@auth',
 
-    'as' => 'social.auth'
+//     'as' => 'social.auth'
 
-]);
+// ]);
 
-Route::get('/{provider}/redirect', [
+// Route::get('/{provider}/redirect', [
 
-    'uses' => 'MediaPlatformController@auth_callback',
+//     'uses' => 'MediaPlatformController@auth_callback',
 
-    'as' => 'social.callback'
-]);
+//     'as' => 'social.callback'
+// ]);
+
+Route::get('/auth/redirect/{provider}', 'MediaPlatformController@redirect');
+
+  Route::get('/callback/{provider}', 'MediaPlatformMController@callback');

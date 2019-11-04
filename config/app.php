@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Polestar'),
 
     /*
     |--------------------------------------------------------------------------
@@ -166,8 +166,8 @@ return [
         /*
          * Package Service Providers...
          */
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
-        AdamWathan\EloquentOAuthL5\EloquentOAuthServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -228,7 +228,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'SocialAuth' => AdamWathan\EloquentOAuth\Facades\OAuth::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 

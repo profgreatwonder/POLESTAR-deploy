@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>PoleStar</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -84,12 +84,18 @@
                    PoleStar
                 </div>
 
+
+
                 <div class="links">
-                    <a href="{{ route('social.auth', ['provider' => 'github']) }}">GitHub</a>
-                    <a href="{{ route('social.auth', ['provider' => 'facebook']) }}">Facebook</a>
-                    <a href="{{ route('social.auth', ['provider' => 'google']) }}">Google</a>
-                    <a href="{{ route('social.auth', ['provider' => 'linkedin']) }}">LinkedIn</a>
-                    <a href="{{ route('social.auth', ['provider' => 'instagram']) }}">Instagram</a>
+                    <a href="{{ url('/auth/redirect/github') }}">GitHub</a>
+
+                    <a href="{{ url('/auth/redirect/facebook') }}">Facebook</a>
+
+                    <a href="{{ url('/auth/redirect/google') }}">Google</a>
+
+                    <a href="{{ url('/auth/redirect/linkedin') }}">LinkedIn</a>
+
+                    <a href="{{ url('/auth/redirect/instagram') }}">Instagram</a>
                 </div>
             </div>
         </div>
