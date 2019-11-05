@@ -78,15 +78,21 @@
 
                 <div class="row">
 
-                <div class="col-md-4 pb-3">  
+                <div class="col-md-4 pb-3"> 
+                    
+                    <a href="{{ route('conversations.create') }}" class="form-control btn btn-primary my-4">Create a New Conversation</a>
+
+                    <br>
+                    <br>
                 
                     <div class="panel panel-default">
 
-                        <div class="panel-heading pb-2">
+                        {{-- <div class="panel-heading pb-2 border p-2">
                             PlatForms
-                        </div>
+                        </div> --}}
+                        <div class="card-header text-center">PlatForms</div>
 
-                        <div class="panel-body">
+                        <div class="panel-body pt-2">
 
                             <ul class="list-group">
                              @yield('table')                                                        </ul>

@@ -40,4 +40,16 @@ Route::get('/auth/redirect/{provider}', 'MediaPlatformController@redirect');
 
         Route::resource('medium', 'MediumController');
 
+        Route::get('conversation/create', [
+
+            'uses' => 'ConversationsController@create',
+            'as' => 'conversations.create'
+        ]);
+
+        Route::post('conversations/store', [
+
+            'uses' => 'ConversationsController@store',
+            'as' => 'conversations.store'
+        ]);
+
   });
