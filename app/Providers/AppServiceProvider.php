@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Medium;
+
+use View;
+
 use Illuminate\Support\ServiceProvider;
 
 use Illuminate\Support\Facades\Schema;
@@ -25,6 +29,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Schema::defaultStringLength(191);
+        View::share('medium', Medium::all());
+
+        // Schema::defaultStringLength(191);
     }
 }

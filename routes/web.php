@@ -6,6 +6,13 @@ Route::get('/', function () {
 
 });
 
+Route::get('/converse', function () {
+
+    return view('/converse');
+
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

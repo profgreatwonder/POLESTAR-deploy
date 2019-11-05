@@ -18,7 +18,7 @@
                     <form action="{{ route('medium.update', ['medium' => $medium->id ])}}" method="post">
 
                         {{ csrf_field()}}
-                        {{ method_field('PUT') }}
+                        {{ method_field('PUT')}}
 
                         <div class="form-group">
 

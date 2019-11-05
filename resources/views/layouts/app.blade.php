@@ -73,7 +73,48 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            
+            <div class="container">
+
+                <div class="row">
+
+                <div class="col-md-4 pb-3">  
+                
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading pb-2">
+                            PlatForms
+                        </div>
+
+                        <div class="panel-body">
+
+                            <ul class="list-group">
+                                @foreach($medium as $media)
+
+                                <li class="list-group-item">
+                                    
+                                    {{-- {{ $media->title }} --}}
+
+                                </li>
+
+                                @endforeach
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-8 pt-3"> 
+
+                    @yield('content')
+
+                </div>
+
+            </div>
+
+            </div>
         </main>
     </div>
 </body>
