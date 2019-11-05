@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Conversation extends Model
 {
+    
     protected $fillable = ['title', 'content', 'user_id', 'medium_id'];
 
     public function medium() {

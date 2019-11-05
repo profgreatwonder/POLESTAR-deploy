@@ -28,3 +28,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/auth/redirect/{provider}', 'MediaPlatformController@redirect');
 
   Route::get('/callback/{provider}', 'MediaPlatformMController@callback');
+
+  Route::group(['middleware' => 'auth'], function() {
+
+        Route::resource('medium', 'MediumController');
+
+  });
