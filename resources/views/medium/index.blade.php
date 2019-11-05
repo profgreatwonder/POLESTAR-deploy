@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card my-2">
                 <div class="card-header">PlatForms</div>
 
                 <div class="card-body">
@@ -69,4 +69,17 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('table')
+@foreach($medium as $media)
+
+<li class="list-group-item">
+    
+    {{ $media->title }}
+
+</li>
+
+@endforeach
+
 @endsection

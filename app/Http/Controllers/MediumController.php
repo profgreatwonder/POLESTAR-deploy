@@ -92,7 +92,7 @@ class MediumController extends Controller
     {
         $medium = Medium::find($id);
         
-        $medium->title=  $request->medium;
+        $medium->title = $request->medium;
         $medium->save();
 
         $request->session()->flash('success', 'Platform edited successfully');

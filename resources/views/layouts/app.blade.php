@@ -89,16 +89,7 @@
                         <div class="panel-body">
 
                             <ul class="list-group">
-                                @foreach($medium as $media)
-
-                                <li class="list-group-item">
-                                    
-                                    {{-- {{ $media->title }} --}}
-
-                                </li>
-
-                                @endforeach
-                            </ul>
+                             @yield('table')                                                        </ul>
 
                         </div>
 

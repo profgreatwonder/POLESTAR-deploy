@@ -46,3 +46,13 @@
     </div>
 </div>
 @endsection
+
+@section('table')
+
+<li class="list-group-item">
+    
+    {{ $medium->title }}
+
+</li>
+
+@endsection
